@@ -4,11 +4,11 @@ A modern, responsive, and interactive developer portfolio built with **React.js,
 
 ## 🌐 Live Demo
 
-**[View Live Portfolio](#)**
+**[View Live Portfolio](https://shariqreactportfolio.vercel.app)**
 
 ---
 
-## ✨ Features
+## Features
 
 * Fully responsive design
 * Modern and clean user interface
@@ -25,7 +25,7 @@ A modern, responsive, and interactive developer portfolio built with **React.js,
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology     | Purpose                       |
 | -------------- | ----------------------------- |
@@ -99,7 +99,7 @@ portfolio/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -153,7 +153,7 @@ http://localhost:5173
 
 ---
 
-## 📦 Production Build
+## Production Build
 
 To create an optimized production build:
 
@@ -169,7 +169,7 @@ npm run preview
 
 ---
 
-## 📬 Contact Form
+## Contact Form
 
 The portfolio uses **EmailJS** to handle contact form submissions.
 
@@ -184,7 +184,7 @@ The form provides loading feedback and success/error notifications after submiss
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 This project can be deployed on platforms such as **Vercel** or **Netlify**.
 
@@ -192,7 +192,7 @@ For deployment, make sure the required EmailJS environment variables are configu
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I'm **Shariq Ahmad**, a web developer focused on building modern, responsive, and user-friendly web applications.
 
@@ -210,11 +210,11 @@ My current areas of interest include:
 
 * **GitHub:** [@Shariq2004](https://github.com/Shariq2004)
 * **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/shariq786/)
-* **Portfolio:** [Live Website](#)
+* **Portfolio:** [Live Website](https://shariqreactportfolio.vercel.app)
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the **MIT License**.
 
