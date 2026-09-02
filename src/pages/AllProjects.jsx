@@ -67,7 +67,7 @@ const AllProjects = () => {
         </div>
 
         <p className="mb-8 text-xs sm:text-sm text-slate-400">
-          You've total{" "}
+          I've total{" "}
           <span className="font-semibold text-white">
             {filteredProjects.length}
           </span>{" "}
