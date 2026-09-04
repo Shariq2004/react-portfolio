@@ -1,14 +1,14 @@
 import { ArrowUpRight, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import { sections } from "../data/navigation";
 
 const Footer = () => {
-
   return (
     <footer className="relative overflow-hidden border-t border-white/[0.07] text-white">
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-2">
         <div className="grid gap-10 py-12 md:grid-cols-[1fr_1fr_1fr]">
           <div className="max-w-sm">
-            <a href="#home" className="group inline-flex items-center gap-3">
+            <Link to="/#home" className="group inline-flex items-center gap-3">
               <div className="relative flex h-10 w-10 items-center justify-center">
                 <div className="absolute inset-0 rounded-full border border-cyan-400/50 shadow-[0_0_14px_rgba(34,211,238,0.25)] transition-all duration-300 group-hover:border-cyan-300" />
 
@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
 
               <span className="text-xl font-bold tracking-tight">Shariq</span>
-            </a>
+            </Link>
 
             <p className="mt-5 text-sm leading-6 text-slate-500">
               Web developer focused on building clean, responsive and meaningful
@@ -44,19 +44,17 @@ const Footer = () => {
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-3">
               {sections.map((section) => (
-                <a
+                <Link
                   key={section.id}
-                  href={`#${section.id}`}
+                  to={`/#${section.id}`}
                   className="group flex items-center gap-1.5 text-sm text-slate-500 transition-colors duration-300 hover:text-cyan-400"
                 >
-                  {/* Hover Line */}
                   <span className="h-px w-0 shrink-0 bg-cyan-400 transition-all duration-300 group-hover:w-3" />
 
-                  {/* Text */}
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     {section.label}
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -72,8 +70,8 @@ const Footer = () => {
               improving my skills as a developer.
             </p>
 
-            <a
-              href="#projects"
+            <Link
+              to="/#projects"
               className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 transition-colors duration-300 hover:text-cyan-300"
             >
               Explore my work
@@ -81,14 +79,14 @@ const Footer = () => {
                 size={15}
                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="flex flex-col gap-3 border-t text-center border-white/[0.07] py-5 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p className="text-slate-600">
-            © {new Date().getFullYear()} Shariq. All rights reserved.
+            &copy; {new Date().getFullYear()} Shariq. All rights reserved.
           </p>
 
           <div className="flex items-center justify-center gap-1.5 text-slate-600">
