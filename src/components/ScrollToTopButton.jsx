@@ -27,7 +27,7 @@ const ScrollToTopButton = () => {
     <button
       type="button"
       onClick={scrollToTop}
-      className={`group fixed bottom-6 right-5 z-50 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-slate-900/80 text-slate-400 shadow-xl backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:bg-cyan-400/5 hover:text-cyan-400 sm:bottom-7 sm:right-7 sm:h-11 sm:w-11 ${
+      className={`group fixed bottom-6 right-5 z-50 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-slate-300 bg-white text-slate-500 shadow-lg shadow-slate-900/5 backdrop-blur-xl transition-all duration-300 hover:border-blue-300  hover:text-blue-600 hover:shadow-md hover:shadow-blue-500/10 sm:bottom-7 sm:right-7 sm:h-11 sm:w-11 dark:border-white/10 dark:bg-slate-900/80 dark:text-slate-400 dark:shadow-xl dark:shadow-black/10 dark:hover:border-cyan-400/50 dark:hover:bg-cyan-400/5 dark:hover:text-cyan-400 ${
         showButton
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-16 opacity-0"

@@ -26,8 +26,8 @@ function Home() {
       <About />
       <Skills />
       <Experience />
-      <Education />
       <Projects />
+      <Education />
       <Contact />
     </>
   );
@@ -36,36 +36,17 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop />
-      <div className="relative min-h-screen bg-slate-950">
+      <ScrollToTop />
+
+      <div className="relative min-h-screen bg-linear-to-br from-[#f8fafc] via-[#f1f5f9] to-[#e2e8f0] text-slate-900 dark:bg-[#020617] dark:bg-none dark:text-white transition-colors duration-300">
         <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+          <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-cyan-400/8 blur-3xl sm:bg-cyan-400/12 dark:bg-cyan-500/10 dark:sm:bg-cyan-500/20" />
 
-          <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl sm:bg-cyan-500/20" />
+          <div className="absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-indigo-400/8 blur-3xl sm:bg-indigo-400/12 dark:bg-violet-500/10 dark:sm:bg-violet-500/20" />
 
-          <div className="absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-violet-500/10 blur-3xl sm:bg-violet-500/20" />
-
-          <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-blue-500/5 blur-3xl sm:bg-blue-500/10" />
-
-          <div
-            className="absolute inset-0 opacity-40"
-            style={{
-              backgroundImage: `
-                linear-gradient(
-                  rgba(255,255,255,0.03) 1px,
-                  transparent 1px
-                ),
-                linear-gradient(
-                  90deg,
-                  rgba(255,255,255,0.03) 1px,
-                  transparent 1px
-                )
-              `,
-              backgroundSize: "50px 50px",
-            }}
-          />
+          <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-blue-400/6 blur-3xl sm:bg-blue-400/10 dark:bg-blue-500/5 dark:sm:bg-blue-500/10" />
         </div>
 
-        {/* Content */}
         <div className="relative z-10">
           <Navbar />
 
@@ -80,7 +61,7 @@ function App() {
 
           <Footer />
           <ScrollToTopButton />
-          <ToastContainer position="top-right"/>
+          <ToastContainer position="top-right" />
         </div>
       </div>
     </BrowserRouter>
