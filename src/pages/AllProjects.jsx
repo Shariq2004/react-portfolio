@@ -38,13 +38,13 @@ const AllProjects = () => {
 
             <Link
               to="/#projects"
-              className="group hidden items-center gap-2 text-sm font-medium text-slate-500 transition-all duration-300 hover:-translate-x-0.5 hover:text-blue-600 sm:flex dark:text-slate-400 dark:hover:text-cyan-400"
+              className="group flex items-center gap-2 text-sm font-medium text-slate-500 transition-all duration-300 hover:-translate-x-0.5 hover:text-blue-600 dark:text-slate-400 dark:hover:text-cyan-400"
             >
               <ArrowLeft
                 size={16}
                 className="transition-transform duration-300 group-hover:-translate-x-1"
               />
-              Back to Portfolio
+              Back
             </Link>
           </div>
         </div>
@@ -85,7 +85,7 @@ const AllProjects = () => {
           {filteredProjects.map((project, index) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white/80 shadow-sm backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 dark:border-white/10 dark:bg-white/25 dark:shadow-none dark:hover:border-cyan-400/20 dark:hover:shadow-none"
+              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white/80 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-blue-200 hover:shadow-md hover:shadow-blue-500/5 dark:border-white/10 dark:bg-white/2.5 dark:shadow-none dark:hover:border-cyan-400/20 dark:hover:shadow-none"
             >
               <div className="relative h-40 overflow-hidden bg-slate-100 sm:h-44 dark:bg-slate-950">
                 <img
@@ -101,7 +101,7 @@ const AllProjects = () => {
                 </span>
 
                 <span className="absolute right-5 top-5 font-mono text-xs text-white/70 dark:text-white/50">
-                  {String(index + 1).padStart(2, "0")}
+                  0{index + 1}
                 </span>
               </div>
 
@@ -117,8 +117,9 @@ const AllProjects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       aria-label={`${project.title} GitHub`}
-                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-500 transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-100 hover:text-slate-900 dark:border-white/10 dark:bg-white/3 dark:text-slate-400 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white"
+                      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-500 transition-all duration-300 group-hover:border-slate-300 group-hover:bg-slate-100 group-hover:text-slate-900 dark:border-white/10 dark:bg-white/3 dark:text-slate-400 dark:group-hover:border-white/20 dark:group-hover:bg-white/5 dark:group-hover:text-white"
                     >
                       <FaGithub size={16} />
                     </a>
