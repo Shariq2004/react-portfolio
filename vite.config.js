@@ -13,7 +13,7 @@ export default defineConfig({
       registerType: "autoUpdate",
 
       manifest: {
-        name: "Shariq Ahmad - Portfolio",
+        name: "Shariq - Portfolio",
         short_name: "Shariq Portfolio",
         description: "Personal portfolio of Shariq Ahmad",
         theme_color: "#06b6d4",
