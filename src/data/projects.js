@@ -1,30 +1,86 @@
-// Ecobin
-import ecoimage1 from "../assets/projects/ecobin/img-1.png";
-import ecoimage2 from "../assets/projects/ecobin/img-2.png";
-import ecoimage3 from "../assets/projects/ecobin/img-3.png";
-import ecoimage4 from "../assets/projects/ecobin/img-4.png";
-import ecoimage5 from "../assets/projects/ecobin/img-5.png";
-import ecoimage6 from "../assets/projects/ecobin/img-6.png";
-
-//Simon-game
-import simonimage1 from "../assets/projects/simon-game/img-1.png";
-import simonimage2 from "../assets/projects/simon-game/img-2.png";
-import simonimage3 from "../assets/projects/simon-game/img-3.png";
-import simonimage4 from "../assets/projects/simon-game/img-3.png";
-
-//Task-manager
-import taskimage1 from "../assets/projects/task-manager/img-1.png";
-import taskimage2 from "../assets/projects/task-manager/img-2.png";
-import taskimage3 from "../assets/projects/task-manager/img-3.png";
-
-//Number-guessing-game
-import gameimage1 from "../assets/projects/number-guessing-game/img-1.png";
-
-//Tic-tac-Toe
-import tictaktoeimage1 from "../assets/projects/tic-tac-toe/img-1.png";
-
+import {
+  chatifythumbnail,
+  chatifyimage1,
+  chatifyimage2,
+  chatifyimage3,
+  chatifyimage4,
+  chatifyimage5,
+  chatifyimage6,
+  chatifyimage7,
+  ecoimage1,
+  ecoimage2,
+  ecoimage3,
+  ecoimage4,
+  ecoimage5,
+  ecoimage6,
+  simonimage1,
+  simonimage2,
+  simonimage3,
+  simonimage4,
+  taskimage1,
+  taskimage2,
+  taskimage3,
+  gameimage1,
+  tictaktoeimage1,
+} from "../assets/projects/assets";
 
 export const projects = [
+  {
+    title: "Chatify - Real Time Chat Application",
+    category: "MERN",
+    image: chatifythumbnail,
+
+    images: [
+      chatifyimage1,
+      chatifyimage2,
+      chatifyimage3,
+      chatifyimage4,
+      chatifyimage5,
+      chatifyimage6,
+      chatifyimage7,
+    ],
+
+    shortDescription:
+      "Real-time chat application with instant messaging, image sharing, online status, and responsive UI.",
+      
+    description:
+      "Chatify is a full-stack real-time messaging application built with the MERN stack and Socket.IO. It enables users to create accounts, securely log in, discover other users, and exchange messages instantly. Users can share images, view online status and last seen information, manage their profiles, and track unread messages. The application also includes customizable notification and sound settings, light and dark themes, and a responsive interface designed for desktop and mobile devices.",
+
+    features: [
+      "Secure user authentication with JWT and HTTP-only cookies",
+      "Real-time messaging powered by Socket.IO",
+      "Online presence and last seen status",
+      "Image sharing with Cloudinary integration",
+      "Unread message tracking and read receipts",
+      "User search and contact management",
+      "Profile customization with profile picture, bio, and status",
+      "Notification preferences and sound settings",
+      "Light and dark theme customization",
+      "Responsive interface with mobile-friendly navigation",
+      "Real-time chat list and message updates",
+      "Protected routes and persistent authentication",
+    ],
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Mongoose",
+      "Socket.IO",
+      "JWT",
+      "Cloudinary",
+      "Axios",
+    ],
+
+    github: "https://github.com/Shariq2004/Chatify",
+    live: "https://chatify-messenger.vercel.app/",
+    duration: "Ongoing",
+  },
+
   {
     title: "EcoBin - Smart Waste management platform",
     category: "MERN",
@@ -32,7 +88,7 @@ export const projects = [
 
     images: [ecoimage1, ecoimage2, ecoimage3, ecoimage4, ecoimage5, ecoimage6],
     shortDescription:
-       "AI-powered waste management platform for smarter reporting, verification, worker assignment, and collection.",
+      "AI-powered waste management platform for smarter reporting, verification, worker assignment, and collection.",
 
     description:
       "EcoBin is a full-stack smart waste management platform built to streamline the waste collection process. Users can report waste by uploading images and location details, while Gemini AI helps verify the waste type and quantity. The platform enables admins to manage waste reports, assign tasks to workers, and monitor collection activities, while workers can view and complete their assigned tasks.",

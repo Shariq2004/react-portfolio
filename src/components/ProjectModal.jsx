@@ -67,7 +67,7 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
                 <img
                   src={image}
                   alt={`${selectedProject.title} screenshot ${index + 1}`}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-fill"
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-950/85 via-transparent to-transparent" />
