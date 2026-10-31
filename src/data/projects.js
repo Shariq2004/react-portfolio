@@ -1,5 +1,4 @@
 import {
-  chatifythumbnail,
   chatifyimage1,
   chatifyimage2,
   chatifyimage3,
@@ -28,7 +27,7 @@ export const projects = [
   {
     title: "Chatify - Real Time Chat Application",
     category: "MERN",
-    image: chatifythumbnail,
+    image: chatifyimage1,
 
     images: [
       chatifyimage1,
@@ -78,7 +77,7 @@ export const projects = [
 
     github: "https://github.com/Shariq2004/Chatify",
     live: "https://chatify-messenger.vercel.app/",
-    duration: "Ongoing",
+    duration: "1.5 Months",
   },
 
   {
@@ -120,7 +119,7 @@ export const projects = [
   },
 
   {
-    title: "Simon Game",
+    title: "Simon Says - Memory Challenge",
     category: "JavaScript",
     image: simonimage1,
 

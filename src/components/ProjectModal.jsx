@@ -41,7 +41,7 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
       onClick={() => setSelectedProject(null)}
     >
       <div
-        className="relative flex max-h-[97vh] sm:max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
+        className="relative flex max-h-[calc(100dvh-1rem)] lg:max-h-[calc(100dvh-4rem)] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -55,7 +55,7 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
           />
         </button>
 
-        <div className="relative h-56 shrink-0 overflow-hidden bg-slate-100 sm:h-72 dark:bg-slate-900">
+        <div className="relative h-[28dvh] min-h-36 max-h-64 shrink-0 overflow-hidden bg-slate-100 sm:h-[38dvh] sm:min-h-48 sm:max-h-72 dark:bg-slate-900">
           <div
             className="flex h-full transition-transform duration-500 ease-out"
             style={{
@@ -99,9 +99,8 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
             </button>
           )}
 
-          {/* Project Info on Image */}
           <div className="absolute bottom-8 left-5 z-20 sm:left-8">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-400">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300">
               {selectedProject.category}
             </p>
 
@@ -110,7 +109,6 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
             </h3>
           </div>
 
-          {/* Image Indicators */}
           {images.length > 1 && (
             <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
               {images.map((_, index) => (

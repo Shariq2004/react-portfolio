@@ -91,16 +91,16 @@ const AllProjects = () => {
                 <img
                   src={project.image}
                   alt={`${project.title} project`}
-                  className="block h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="block h-full w-full object-fill transition-transform duration-700 ease-out group-hover:scale-105"
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-slate-600/30 via-transparent to-transparent dark:from-slate-950/75 dark:via-slate-950/15" />
 
-                <span className="absolute left-5 top-5 rounded-full border border-slate-200/80 bg-white/85 px-3 py-1 text-[11px] font-medium text-slate-600 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-slate-950/70 dark:text-slate-300 dark:shadow-none">
+                <span className="absolute left-5 top-4 rounded-full border border-slate-200/80 bg-white/85 px-3 py-1 text-[11px] font-medium text-slate-800 shadow-sm backdrop-blur-md opacity-0 invisible -translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 dark:border-white/10 dark:bg-slate-950/70 dark:text-slate-300 dark:shadow-none">
                   {project.category}
                 </span>
 
-                <span className="absolute right-5 top-5 font-mono text-xs text-white/70 dark:text-white/50">
+                <span className="absolute right-5 top-4 font-mono text-xs text-black/80 dark:text-black">
                   0{index + 1}
                 </span>
               </div>
@@ -108,8 +108,8 @@ const AllProjects = () => {
               {/* Content */}
               <div className="p-4 sm:p-5">
                 <div>
-                  <div className="flex items-center justify-between gap-4">
-                    <h3 className="min-w-0 truncate text-xl font-bold text-slate-900 sm:text-2xl dark:text-white">
+                  <div className="flex justify-between gap-4">
+                    <h3 className="min-w-0 sm:truncate text-xl font-bold text-slate-900 sm:text-2xl dark:text-white">
                       {project.title}
                     </h3>
 

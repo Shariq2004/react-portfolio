@@ -1,5 +1,4 @@
 // Chatify
-import chatifythumbnail from "./chatify/chatify_thumbnail.png";
 import chatifyimage1 from "./chatify/img-1.png";
 import chatifyimage2 from "./chatify/img-2.png";
 import chatifyimage3 from "./chatify/img-3.png";
@@ -34,7 +33,6 @@ import gameimage1 from "./number-guessing-game/img-1.png";
 import tictaktoeimage1 from "./tic-tac-toe/img-1.png";
 
 export {
-  chatifythumbnail,
   chatifyimage1,
   chatifyimage2,
   chatifyimage3,
