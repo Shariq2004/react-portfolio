@@ -15,7 +15,7 @@ const About = () => {
       id="about"
       className="relative text-slate-900 pt-20 sm:pt-24 dark:text-white"
     >
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-2">
+     <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <div className="mb-10 max-w-2xl sm:mb-12">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-medium text-blue-600 dark:border-cyan-400/10 dark:bg-cyan-400/4 dark:text-cyan-300">
             About Me

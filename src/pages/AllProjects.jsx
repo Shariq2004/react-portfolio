@@ -24,7 +24,7 @@ const AllProjects = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden  py-24 text-slate-900 dark:bg-[#020617] dark:bg-none dark:text-white">
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-2">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <div className="mb-7 sm:mb-10">
           <div className="flex items-center justify-between gap-4">
             <div>

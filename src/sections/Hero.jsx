@@ -42,7 +42,8 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen">
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 pt-22 pb-5 sm:px-6 sm:pt-25 lg:px-4 lg:pt-10">
+      {/* <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 pt-22 pb-5 sm:px-6 sm:pt-25 lg:px-4 lg:pt-10"> */}
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 pt-22 pb-5 sm:px-6 sm:pt-25 md:px-8 lg:px-10 lg:pt-10 xl:px-12">
         <div className="grid w-full items-center gap-18 sm:gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-600/20 bg-emerald-500/5 px-4 py-2 text-xs text-emerald-700 backdrop-blur-sm sm:text-sm dark:border-emerald-400/20 dark:text-emerald-300">
@@ -117,7 +118,7 @@ const Hero = () => {
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-57.5 sm:max-w-65 md:max-w-70 lg:max-w-75">
+            <div className="relative w-full max-w-60 sm:max-w-65 md:max-w-70 lg:max-w-80">
               <div className="absolute -right-3 -top-4 z-20 rounded-xl border border-slate-200 bg-white/95 px-2.5 py-2 shadow-lg backdrop-blur-xl sm:-right-3 sm:-top-5 sm:px-3 sm:py-2.5 lg:-right-4 lg:-top-6 lg:px-4 lg:py-3 dark:border-white/10 dark:bg-slate-900/80 dark:shadow-xl">
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-100 text-cyan-700 sm:h-8 sm:w-8 dark:bg-cyan-400/10 dark:text-cyan-400">
@@ -128,7 +129,6 @@ const Hero = () => {
                     <p className="text-[8px] text-slate-500 sm:text-[10px] dark:text-slate-500">
                       Current Role
                     </p>
-
                     <p className="text-[10px] font-semibold text-slate-900 sm:text-xs dark:text-white">
                       Web Developer
                     </p>
@@ -137,7 +137,7 @@ const Hero = () => {
               </div>
 
               <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 p-2 shadow-xl shadow-slate-900/5 backdrop-blur-xl sm:p-2.5 dark:border-white/10 dark:bg-white/4 dark:shadow-2xl dark:shadow-cyan-500/10">
-                <div className="relative h-70 overflow-hidden rounded-2xl bg-slate-100 sm:h-85 md:h-92.2 lg:h-100 dark:bg-slate-900">
+                <div className="relative h-70 overflow-hidden rounded-2xl bg-slate-100 sm:h-85 md:h-[clamp(19rem,45dvh,25rem)] lg:h-[clamp(20rem,55dvh,32rem)] dark:bg-slate-900">
                   <img
                     src={profileImage}
                     alt="Shariq-Image"

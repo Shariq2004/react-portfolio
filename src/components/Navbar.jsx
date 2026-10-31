@@ -31,7 +31,8 @@ const Navbar = () => {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full">
-      <nav className="mx-auto mt-2 flex w-[calc(100%-1rem)] max-w-7xl flex-wrap items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-4 py-2.5 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/70 dark:shadow-black/10 sm:mt-4 sm:w-100% sm:px-6 sm:py-3 lg:px-4">
+      <div className="mx-auto mt-2 w-full max-w-7xl px-2 sm:px-5 md:px-7 lg:px-10 xl:px-10">
+      <nav className="relative flex w-full flex-wrap items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-3 py-2.5 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/70 dark:shadow-black/10 sm:px-4 sm:py-3">
         {/* Logo */}
         <Link
           to="/#home"
@@ -181,6 +182,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      </div>
     </header>
   );
 };

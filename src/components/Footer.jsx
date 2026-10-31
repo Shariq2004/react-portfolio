@@ -5,7 +5,7 @@ import { sections } from "../data/navigation";
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden border-t border-slate-300 text-slate-900 dark:border-white/[0.07] dark:text-white">
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-2">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         <div className="grid gap-10 py-12 md:grid-cols-[1fr_1fr_1fr]">
           <div className="max-w-sm">
             <Link
