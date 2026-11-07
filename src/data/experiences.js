@@ -1,13 +1,13 @@
 export const experiences = [
   {
-    year: "2026 — Present",
+    year: "Apr 2026 — Present",
     type: "CURRENT ROLE",
-    role: "HTML Developer",
+    role: "Junior Web Developer",
     company: "Infopro Learning",
     location: "Noida, India",
 
     description:
-      "Making accessible and user-friendly digital learning experiences by improving HTML structure, keyboard navigation, screen reader compatibility, and WCAG compliance.",
+      "Developing and remediating digital learning content to improve accessibility, usability, and compliance with WCAG guidelines. Working with HTML, CSS, JavaScript, and Microsoft Office documents to ensure semantic structure, keyboard accessibility, and screen reader compatibility.",
 
     responsibilities: [
       "Remediating existing HTML content for accessibility",
@@ -17,7 +17,7 @@ export const experiences = [
       "Applying WCAG accessibility guidelines",
     ],
 
-    tech: ["HTML", "CSS", "JavaScript", "Accessibility", "WCAG"],
+    tech: ["HTML", "CSS", "JavaScript", "WCAG", "Web Accessibility", "Jira", "Microsoft Office",],
   },
 
   {
@@ -28,7 +28,7 @@ export const experiences = [
     location: "Remote",
 
     description:
-      "Worked on responsive web development projects while strengthening frontend fundamentals through practical web interfaces and interactive experiences.",
+    "Gained practical experience in web development by building responsive web pages, creating interactive user interfaces, and strengthening frontend development skills.",
 
     responsibilities: [
       "Built responsive web pages using HTML, CSS and JavaScript",

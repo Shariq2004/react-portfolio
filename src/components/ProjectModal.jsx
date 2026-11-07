@@ -41,7 +41,7 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
       onClick={() => setSelectedProject(null)}
     >
       <div
-        className="relative flex max-h-[calc(100dvh-1rem)] lg:max-h-[calc(100dvh-4rem)] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
+        className="relative flex max-h-[calc(100dvh-1rem)] lg:max-h-[calc(100dvh-4rem)] w-full max-w-2xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
