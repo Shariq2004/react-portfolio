@@ -123,7 +123,7 @@ const Hero = () => {
 
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-60 sm:max-w-65 md:max-w-70 lg:max-w-75">
-              <div className="absolute -right-3 -top-4 z-20 rounded-xl border border-slate-200 bg-white/95 px-2.5 py-2 shadow-lg backdrop-blur-xl sm:-right-3 sm:-top-5 sm:px-3 sm:py-2.5 lg:-right-4 lg:-top-6 lg:px-4 lg:py-3 dark:border-white/10 dark:bg-slate-900/80 dark:shadow-xl">
+              <div className="absolute -right-5 -top-3 z-20 rounded-xl border border-slate-200 bg-white/95 px-2.5 py-2 shadow-lg backdrop-blur-xl sm:-right-3 sm:-top-5 sm:px-3 sm:py-2.5 lg:-right-6 lg:-top-4 lg:px-3 lg:py-3 dark:border-white/10 dark:bg-slate-900/80 dark:shadow-xl">
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-100 text-cyan-700 sm:h-8 sm:w-8 dark:bg-cyan-400/10 dark:text-cyan-400">
                     <Code2 size={15} className="sm:h-4.25 sm:w-4.25" />
@@ -140,8 +140,8 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 p-2 shadow-xl shadow-slate-900/5 backdrop-blur-xl sm:p-2.5 dark:border-white/10 dark:bg-white/4 dark:shadow-2xl dark:shadow-cyan-500/10">
-                <div className="relative h-70 overflow-hidden rounded-2xl bg-slate-100 sm:h-85 md:h-[clamp(19rem,45dvh,25rem)] lg:h-[clamp(20rem,50dvh,30rem)] dark:bg-slate-900">
+              <div className="relative overflow-hidden rounded-t-full border border-slate-200 bg-white/80 p-2 shadow-xl shadow-slate-900/5 backdrop-blur-xl sm:p-2.5 dark:border-white/10 dark:bg-white/4 dark:shadow-2xl dark:shadow-cyan-500/10">
+                <div className="relative h-70 overflow-hidden rounded-t-full bg-slate-100 sm:h-85 md:h-[clamp(19rem,45dvh,25rem)] lg:h-[clamp(20rem,50dvh,30rem)] dark:bg-slate-900">
                   <img
                     src={profileImage}
                     alt="Shariq-Image"
@@ -163,7 +163,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 -left-3 z-20 rounded-xl border border-slate-200 bg-white/95 p-2.5 shadow-lg backdrop-blur-xl sm:-bottom-5 sm:-left-5 sm:p-3 lg:-left-7 dark:border-white/10 dark:bg-slate-900/90 dark:shadow-xl">
+              <div className="absolute -bottom-4 -left-7 z-20 rounded-xl border border-slate-200 bg-white/95 p-2.5 shadow-lg backdrop-blur-xl sm:-bottom-5 sm:-left-5 sm:p-3 lg:-left-9 dark:border-white/10 dark:bg-slate-900/90 dark:shadow-xl">
                 <div className="flex items-center gap-2 sm:gap-2.5">
                   <div className="font-mono text-[10px] sm:text-xs">
                     <span className="text-indigo-600 dark:text-violet-400">

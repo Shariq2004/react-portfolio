@@ -37,11 +37,11 @@ const ProjectModal = ({ selectedProject, setSelectedProject }) => {
 
   return (
     <div
-      className="fixed inset-0 z-100 flex items-center justify-center bg-slate-900/20 p-2 backdrop-blur-sm dark:bg-slate-950/10"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-slate-900/10 p-0 backdrop-blur-sm dark:bg-slate-950/10 sm:p-2"
       onClick={() => setSelectedProject(null)}
     >
       <div
-        className="relative flex max-h-[calc(100dvh-1rem)] lg:max-h-[calc(100dvh-4rem)] w-full max-w-2xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
+       className="relative flex h-full w-full max-w-2xl flex-col overflow-hidden border border-slate-200 bg-white shadow-2xl shadow-slate-900/10 sm:h-auto sm:max-h-[calc(100dvh-4rem)] sm:rounded-3xl dark:border-white/10 dark:bg-slate-950 dark:shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button

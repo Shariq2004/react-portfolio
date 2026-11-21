@@ -74,7 +74,7 @@ const Footer = () => {
             </p>
 
             <Link
-              to="/#projects"
+              to="/projects"
               className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition-all duration-300 hover:text-indigo-600 dark:text-cyan-400 dark:hover:text-cyan-300"
             >
               Explore my work

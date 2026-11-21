@@ -65,7 +65,7 @@ const Projects = () => {
               <div className="p-4 sm:p-5">
                 <div>
                   <div className="flex justify-between gap-4">
-                    <h3 className="text-xl font-bold text-slate-900 sm:text-2xl dark:text-white">
+                    <h3 className="text-xl sm:truncate font-bold text-slate-900 sm:text-2xl dark:text-white">
                       {project.title}
                     </h3>
 
@@ -81,16 +81,16 @@ const Projects = () => {
                     </a>
                   </div>
 
-                  <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-500">
+                  <p className="mt-3 sm:line-clamp-2 text-sm leading-6 text-slate-600 dark:text-slate-500">
                     {project.shortDescription}
                   </p>
                 </div>
 
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 flex min-h-5.5 sm:min-h-7 flex-nowrap gap-2 overflow-x-auto overflow-y-hidden whitespace-nowrap">
                   {project.tech.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 text-[9px] font-medium text-slate-600 transition-all duration-300 hover:border-blue-200 hover:bg-blue-50 hover:text-blue-600 sm:px-3 sm:text-[11px] dark:border-white/10 dark:bg-white/3 dark:text-slate-500 dark:hover:border-cyan-400/15 dark:hover:bg-cyan-400/5 dark:hover:text-cyan-400"
+                      className="shrink-0 rounded-full border border-slate-200 bg-slate-50 px-2 py-1 text-[9px] font-medium text-slate-600 transition-all duration-300 hover:border-blue-200 hover:bg-blue-50 hover:text-blue-600 sm:px-3 sm:text-[11px] dark:border-white/10 dark:bg-white/3 dark:text-slate-500 dark:hover:border-cyan-400/15 dark:hover:bg-cyan-400/5 dark:hover:text-cyan-400"
                     >
                       {tech}
                     </span>
